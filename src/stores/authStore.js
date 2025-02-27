@@ -4,7 +4,7 @@ import axios from 'axios';
 export const useAuthStore = defineStore('authStore', {
   state: () => ({
     isLoggedIn: false,
-    user: null,
+    user: null, 
     token: '',
     userName: '',
   }),
