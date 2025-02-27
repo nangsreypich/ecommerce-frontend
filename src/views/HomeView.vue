@@ -97,7 +97,7 @@ export default {
   },
   methods: {
     // Modify to handle pagination
-    getBooks(url = "http://127.0.0.1:8081/api/products") {
+    getBooks(url = "https://phplaravel-1420867-5295533.cloudwaysapps.com/api/products") {
       axios.get(url).then((res) => {
         this.books = res.data;
       });
@@ -121,7 +121,7 @@ export default {
 
       try {
         const response = await axios.post(
-          `http://127.0.0.1:8081/api/cart/add/${productId}`, // Hard-coded URL
+          `https://phplaravel-1420867-5295533.cloudwaysapps.com/api/cart/add/${productId}`, // Hard-coded URL
           {},
           {
             headers: {

@@ -82,7 +82,7 @@ const checkAuthenticationAndFetchCart = async () => {
 // Fetch cart items from the API
 const fetchCartItems = async () => {
   try {
-    const response = await axios.get("http://127.0.0.1:8081/api/cart", {
+    const response = await axios.get("https://phplaravel-1420867-5295533.cloudwaysapps.com/api/cart", {
       headers: { Authorization: `Bearer ${authStore.token}` },
     });
     cartItems.value = response.data.data;
@@ -96,7 +96,7 @@ const fetchCartItems = async () => {
 // Remove item from cart
 const removeFromCart = async (cartId) => {
   try {
-    const response = await axios.delete(`http://127.0.0.1:8081/api/cart/delete/${cartId}`, {
+    const response = await axios.delete(`https://phplaravel-1420867-5295533.cloudwaysapps.com/api/cart/delete/${cartId}`, {
       headers: { Authorization: `Bearer ${authStore.token}` },
     });
 
