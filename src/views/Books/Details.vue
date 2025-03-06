@@ -50,7 +50,7 @@ export default {
     },
     methods: {
         fetchBookDetails(slug) {
-            axios.get(`https://phplaravel-1420867-5295533.cloudwaysapps.com/api/products/${slug}`)
+            axios.get(`https://phplaravel-1424738-5314456.cloudwaysapps.com/api/products/${slug}`)
                 .then((res) => {
                     if (res.data) {
                         this.book = res.data; // Ensure the book data is set
@@ -81,7 +81,7 @@ export default {
 
             try {
                 const response = await axios.post(
-                    `https://phplaravel-1420867-5295533.cloudwaysapps.com/api/cart/add/${productId}`,
+                    `https://phplaravel-1424738-5314456.cloudwaysapps.com/api/cart/add/${productId}`,
                     {},
                     {
                         headers: {

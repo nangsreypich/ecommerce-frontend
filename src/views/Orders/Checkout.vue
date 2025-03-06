@@ -70,7 +70,7 @@ const checkAuthenticationAndFetchCart = async () => {
 // Fetch cart items from the API
 const fetchCartItems = async () => {
     try {
-        const response = await axios.get("https://phplaravel-1420867-5295533.cloudwaysapps.com/api/cart", {
+        const response = await axios.get("https://phplaravel-1424738-5314456.cloudwaysapps.com/api/cart", {
             headers: { Authorization: `Bearer ${authStore.token}` },
         });
         cartItems.value = response.data.data;
@@ -89,7 +89,7 @@ const checkout = async () => {
 
     try {
         const response = await axios.post(
-            "https://phplaravel-1420867-5295533.cloudwaysapps.com/api/order/checkout",
+            "https://phplaravel-1424738-5314456.cloudwaysapps.com/api/order/checkout",
             {
                 address: address.value,
                 phone: phone.value,

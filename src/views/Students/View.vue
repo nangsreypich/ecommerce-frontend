@@ -79,7 +79,7 @@ export default {
 
   methods: {
     getStudent() {
-      axios.get("http://127.0.0.1:8000/api/students").then((res) => {
+      axios.get("https://phplaravel-1424738-5314456.cloudwaysapps.com/api/students").then((res) => {
         this.students = res.data.students;
       });
     },
@@ -87,7 +87,7 @@ export default {
     deleteStudent(studentId) {
       if (confirm("Are you sure you want to delete this data?")) {
         axios
-          .delete(`http://127.0.0.1:8000/api/students/${studentId}/delete`)
+          .delete(`https://phplaravel-1424738-5314456.cloudwaysapps.com/api/students/${studentId}/delete`)
           .then((res) => {
             alert(res.data.message);
             this.getStudent(); // Refresh the list after deletion

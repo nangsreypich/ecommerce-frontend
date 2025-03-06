@@ -12,7 +12,7 @@ export const useAuthStore = defineStore('authStore', {
   actions: {
     async login(email, password) {
       try {
-        const response = await axios.post('https://phplaravel-1420867-5295533.cloudwaysapps.com/api/login', { email, password });
+        const response = await axios.post('https://phplaravel-1424738-5314456.cloudwaysapps.com/api/login', { email, password });
 
         if (response.data.status) {
           this.isLoggedIn = true;
@@ -41,7 +41,7 @@ export const useAuthStore = defineStore('authStore', {
 
     async logout() {
       try {
-        await axios.post('https://phplaravel-1420867-5295533.cloudwaysapps.com/api/logout');
+        await axios.post('https://phplaravel-1424738-5314456.cloudwaysapps.com/api/logout');
 
         this.isLoggedIn = false;
         this.user = null;

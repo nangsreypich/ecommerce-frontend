@@ -89,7 +89,7 @@ export default {
       this.successMessage = ""; // Clear previous success message before making the request
 
       axios
-        .post("http://127.0.0.1:8000/api/students", this.model.student)
+        .post("https://phplaravel-1424738-5314456.cloudwaysapps.com/api/students", this.model.student)
         .then((res) => {
           if (res.data.status === 200) {
             // Set success message

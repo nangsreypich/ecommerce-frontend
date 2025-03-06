@@ -67,7 +67,7 @@ const successMessage = ref("");
 const errorMessage = ref("");
 
 // Fetch orders
-const getOrders = async (url = "https://phplaravel-1420867-5295533.cloudwaysapps.com/api/order/history") => {
+const getOrders = async (url = "https://phplaravel-1424738-5314456.cloudwaysapps.com/api/order/history") => {
   if (!authStore.token) return;
 
   try {

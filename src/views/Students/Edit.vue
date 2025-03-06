@@ -85,7 +85,7 @@ export default {
   methods: {
     getStudentData(studentId) {
       axios
-        .get(`http://127.0.0.1:8000/api/students/${studentId}/edit`)
+        .get(`https://phplaravel-1424738-5314456.cloudwaysapps.com/api/students/${studentId}/edit`)
         .then((res) => {
           if (res.data && res.data.student) {
             this.model.student = res.data.student;
@@ -100,7 +100,7 @@ export default {
     updateStudent() {
       axios
         .put(
-          `http://127.0.0.1:8000/api/students/${this.studentId}/edit`,
+          `https://phplaravel-1424738-5314456.cloudwaysapps.com/api/students/${this.studentId}/edit`,
           this.model.student
         )
         .then((res) => {

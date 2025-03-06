@@ -81,7 +81,7 @@ export default {
   methods: {
     saveData() {
       axios
-        .post("https://phplaravel-1420867-5295533.cloudwaysapps.com/api/register", this.student)
+        .post("https://phplaravel-1424738-5314456.cloudwaysapps.com/api/register", this.student)
         .then(({ data }) => {
           this.alertMessage = data.message;
           this.alertType = "success";
